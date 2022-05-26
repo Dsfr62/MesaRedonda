@@ -1,0 +1,24 @@
+{
+  "name": "mesaredonda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  },
+  "_moduleAliases": {
+    "@": "src",
+    "@app": "src/index.js"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
