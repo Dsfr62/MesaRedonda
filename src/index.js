@@ -9,6 +9,16 @@ app.get('/', function (req, res) {
     res.send('Hello world!');
 });
 
+app.get('/users', function (req, res) {
+    if (users.length == 0) {
+        console.log("We still don't have users :C");
+        res.status(404).send("We still don't have users yet");
+        return ;
+    }
+    console.log("Show all users");
+    res.send(users);
+});
+
 app.post('/cadastro/', function (req, res) {
     const user = req.body;
     if (!user.name) {
